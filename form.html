@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="form.css" />
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <title> RegExp Validations </title>
+</head>
+
+<body>
+    <form id="formWrap">
+        <div class="col-md-12">
+            <h2> APPLICATION FORM </h2>
+        </div>
+        <div class="col-md-12">
+            <p id="firstNameColour"> Type your first name here: </p>
+            <input type="text" name="firstname" size="50" placeholder="First Name" id="firstName">
+        </div>
+        <div class="col-md-12">
+            <p id="lastNameColour"> Type your last name here: </p>
+            <input type="text" name="lasttname" size="50" placeholder="Last Name" id="lastName">
+        </div>
+        <div class="col-md-12">
+            <p id="emailAddressColour"> Type your email address here: </p>
+            <input type="text" name="emailaddress" size="50" placeholder="Email address" id="emailAddress">
+        </div>
+        <div class="col-md-12">
+            <p id="passWordColour"> Type your password here: </p>
+            <input type="password" placeholder="Password" size="50" id="passWord">
+        </div>
+        <div class="col-md-12">
+            <label for="exampleInputFile"> Please upload your CV: </label>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-7">
+            <input type="file" id="exampleInputFile">
+        </div>
+        <div class="col-md-2"></div>
+        </div>
+        <div class="col-md-12">
+            <button type="submit" id="submitBtn">
+                <span class="top content"> SEND </span>
+                <span class="bottom content"> ME </span>
+            </button>
+        </div>
+    </form>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+    <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="form.js"></script>
+</body>
+
+</html>

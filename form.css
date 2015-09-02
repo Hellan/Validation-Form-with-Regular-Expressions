@@ -1,0 +1,104 @@
+body {
+    background-image: url("background.png");
+}
+
+#formWrap {
+    width: 560px;
+    height: 450px;
+    margin: 7% auto;
+    padding: 0%;
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+    background-color: #CCCCCC;
+    border-radius: 16%;
+    border-style: solid;
+}
+
+#submitBtn {
+    width: 140px;
+    height: 50px;
+    padding: 1%;
+    margin-top: 10%;
+    font-size: 1.8em;
+    color: white;
+    border-style: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    background-color: green;
+    border-radius: 5%;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    transition: top 0.5s;
+    
+    left:30%;
+}
+
+.top {
+    top: 0px;
+}
+
+#submitBtn:hover .top {
+    /*top: -100px;*/
+    display: none;
+}
+
+.bottom {
+    top: 100px;
+    visibility: hidden;
+
+}
+
+#submitBtn:hover .bottom {
+    top: 0px;
+    visibility: visible;
+}
+
+
+h2,
+button {
+    font-family: 'Indie Flower', cursive;
+}
+
+p {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.inputFile {
+    position: absolute;
+    top: 54%;
+    left: 30%;
+    margin-top: 10px;
+}
+
+.red {
+    background-color: red;
+}
+
+.redtext {
+    color: red;
+}
+
+@media screen and (max-width: 600px) {
+    #formWrap {
+        width: 360px;
+        height: 450px;
+    }
+    p {
+        font-size: 13px;
+    }
+    body {
+        background-color: black;
+        background-image: none;
+    }
+    input {
+        width: 250px;
+    }
+}
