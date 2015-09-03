@@ -122,8 +122,6 @@ $(document).ready(function() {
         if (pass.is(":blank")) {
             alert('Please enter your password');
             $("#passWordColour").addClass('red');
-        } else {
-            $("<a href='www.google.com'></a>").click();
         }
 
     });

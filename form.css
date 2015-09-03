@@ -31,8 +31,7 @@ body {
 .content {
     position: absolute;
     transition: top 0.5s;
-    
-    left:30%;
+    left: 30%;
 }
 
 .top {
@@ -47,14 +46,12 @@ body {
 .bottom {
     top: 100px;
     visibility: hidden;
-
 }
 
 #submitBtn:hover .bottom {
     top: 0px;
     visibility: visible;
 }
-
 
 h2,
 button {
@@ -101,4 +98,20 @@ input {
     input {
         width: 250px;
     }
+}
+
+@keyframes slideUp {
+    30% {
+        transform: translateY(80px);
+    }
+    50% {
+        transform: translateY(-250px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#formWrap {
+    animation: slideUp 2s 0.9s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
